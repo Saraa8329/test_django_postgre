@@ -1,0 +1,7 @@
+<h1>{{ object.title }}</h1>
+<p><strong>Author:</strong> {{ object.author.name }}</p>
+<p><strong>Genre:</strong> {{ object.get_genre_display }}</p>
+<p><strong>Published:</strong> {{ object.published_date }}</p>
+<p><strong>ISBN:</strong> {{ object.isbn }}</p>
+
+<a href="{% url 'book-list' %}">Back to list</a>

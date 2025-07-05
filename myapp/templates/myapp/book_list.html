@@ -1,0 +1,13 @@
+<h1>Book List</h1>
+<a href="{% url 'book-create' %}">Add a new book</a>
+<ul>
+  {% for book in object_list %}
+    <li>
+      <a href="{% url 'book-detail' book.pk %}">
+        {{ book.title }} — {{ book.get_genre_display }}
+      </a>
+    </li>
+  {% empty %}
+    <li>No books yet.</li>
+  {% endfor %}
+</ul>
