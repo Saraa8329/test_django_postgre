@@ -73,16 +73,19 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+import dj_database_url
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'test1',
-        'USER': 'Sara',
-        'PASSWORD': 'password',  
-        'HOST': 'localhost',
+        'NAME': 'postgres',
+        'USER': 'postgres.rsonrqvdwwbtaltuyijs',
+        'PASSWORD': '+#j4DfYQCg6CPjR',
+        'HOST': 'aws-0-eu-west-2.pooler.supabase.com',
         'PORT': '5432',
     }
 }
+
 
 
 
